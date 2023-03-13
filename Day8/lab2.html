@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LAB 2</h1>
+    <script>
+        function test(a, b, type) {
+            if (type == 'add') {
+                return a + b;
+            }
+            if (type == 'sub') {
+                return a - b;
+            }
+            if (type == 'mul') {
+                return a * b;
+            }
+            if (type == 'div') {
+                return a / b;
+            }
+        }
+
+        let result = test(10, 2, 'add');
+        // let result2 = test(10, 2, 'sub')
+        // let result3 = test(10, 2, 'mul')
+        // let result4 = test(10, 2, 'div')
+        console.log(result);
+    </script>
+</body>
+</html>
