@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LAB 4</h1>
+    <script>
+        function student(name, age, gender, dob, height, weight, nationality) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+            this.dob = dob;
+            this.height = height;
+            this.weight = weight;
+            this.nationality = nationality;
+        }
+
+
+        // Khởi tạo các objects thông qua định nghĩa ở trên.
+        var studentA = new student('Bui Ngoc Huy', 22, 'Male', '24-12-2000', 182, 72, 'Vietnam');
+        var studentB = new student('Tran Dieu Thao', 19, 'Female', '27-09-2003', 168, 54, 'Japan');
+
+        function showInfo(student) {
+            if (student == 'studentA') {
+                document.writeln(studentA.name);
+                document.writeln(studentA.age);
+                document.writeln(studentA.gender);
+                document.writeln(studentA.dob);
+                document.writeln(studentA.height);
+                document.writeln(studentA.weight);
+                document.writeln(studentA.nationality);
+            }
+            if (student == 'studentB') {
+                document.writeln(studentB.name);
+                document.writeln(studentB.age);
+                document.writeln(studentB.gender);
+                document.writeln(studentB.dob);
+                document.writeln(studentB.height);
+                document.writeln(studentB.weight);
+                document.writeln(studentB.nationality);
+            }
+        }
+
+        showInfo('studentA');
+        showInfo('studentB');
+    </script>
+</body>
+</html>
